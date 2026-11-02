@@ -13,7 +13,7 @@ CONFIG_QUOTACTL=y
 # CONFIG_SECURITY_YAMA is not set
 
 # systemd (optional): https://github.com/systemd/systemd/blob/v238/README
-# CONFIG_NET_CLS_CGROUP is not set
+CONFIG_NET_CLS_CGROUP=y
 
 CONFIG_FANOTIFY=y
 
@@ -49,8 +49,8 @@ CONFIG_BT_HCIUART_H4=y
 CONFIG_BT_RFCOMM=y
 CONFIG_BT_HCIUART=y
 
-# CONFIG_CGROUP_PERF is not set
-# CONFIG_CGROUP_DEVICE is not set
+CONFIG_CGROUP_PERF=y
+CONFIG_CGROUP_DEVICE=y
 # CONFIG_BLK_CGROUP is not set
 
 # Up to hybris-16 it's recommended to have SELinux disabled at boottime via kernel cmdline: 
@@ -78,7 +78,7 @@ CONFIG_IP6_NF_MATCH_AH=y
 # CONFIG_NETFILTER_XT_NAT is not set
 
 
-# CONFIG_SCHED_DEBUG is unset
+# CONFIG_SCHED_DEBUG is not set
 # CONFIG_RTC_DRV_CMOS is not set
 
 # optional. required for lxc containers
@@ -87,13 +87,13 @@ CONFIG_CPUSETS=y
 # optional, for droid firmware load helper
 # CONFIG_FW_LOADER_USER_HELPER_FALLBACK is not set
 
-# CONFIG_NETPRIO_CGROUP is not set
+CONFIG_NETPRIO_CGROUP=y
 # CONFIG_CGROUP_MEM_RES_CTLR_KMEM is not set
 # CONFIG_CGROUP_MEM_RES_CTLR_SWAP is not set
 # CONFIG_CUSE is not set
 # CONFIG_CGROUP_MEM_RES_CTLR is not set
 # CONFIG_SCHEDSTATS is not set
-# CONFIG_AUTOFS4_FS is not set
+CONFIG_AUTOFS4_FS=y
 
 # Support LZ4 KERNEL Compress
 # CONFIG_KERNEL_LZ4 is not set
@@ -345,9 +345,6 @@ CONFIG_RMNET_DATA_FC=y
 CONFIG_RMNET_DATA_DEBUG_PKT=y
 CONFIG_SOCKEV_NLMCAST=y
 CONFIG_BT=y
-# CONFIG_BT_RFCOMM is not set
-# CONFIG_BT_BNEP is not set
-# CONFIG_BT_HIDP is not set
 CONFIG_CFG80211=y
 CONFIG_CFG80211_DEFAULT_PS=y
 CONFIG_NL80211_TESTMODE=y
